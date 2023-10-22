@@ -68,7 +68,9 @@ endif()
 #       as in otherwise project name should have been added to any already included header file
 target_include_directories(${CMAKE_PROJECT_NAME} PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include/${CMAKE_PROJECT_NAME}>
-  $<INSTALL_INTERFACE:include/${CMAKE_PROJECT_NAME}>)
+  $<INSTALL_INTERFACE:include/${CMAKE_PROJECT_NAME}>
+  ${rclcpp_INCLUDE_DIRS}
+)
 target_compile_features(${CMAKE_PROJECT_NAME} PUBLIC c_std_99 cxx_std_17)  # Require C99 and C++17
 # << ROS2
 

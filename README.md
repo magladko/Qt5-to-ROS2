@@ -1,5 +1,4 @@
-Qt5-to-ROS2
-===============
+# Qt5-to-ROS2
 
 ### Step by step solution to port Qt5 application project into compilabe ROS2 package.
 
@@ -44,3 +43,11 @@ ros_qt_ws/
 
 6. Create *package.xml* in `ros_qt_ws/src/<Qt project>/`
 
+# Working with Qt Creator and ROS2 package
+To work with Qt creator it is best to: 
+1. compile the package with `colcon build` from the terminal.
+2. launch the Qt Creator application from the terminal with sourced ROS2 environment.
+3. Ensure that there are no Qt Creator leftovers in the project, as they might make it impossible to load the package into Qt Creator (especially `.user` files).
+4. Open project by selecting package's `CMakeLists.txt` file.
+5. Select `Import Existing Build...` option and select the `<workspace>/build/<package name>` directory.
+6. It should now possible to compile and run ROS2 package from within the Qt Creator IDE.
