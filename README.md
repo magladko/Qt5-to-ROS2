@@ -13,7 +13,6 @@ ros_qt_ws/
 └── src
     └── qt_demo
         ├── CMakeLists.txt
-        ├── CMakeLists.txt.user
         ├── main.cpp
         ├── mainwindow.cpp
         ├── mainwindow.h
@@ -30,7 +29,6 @@ ros_qt_ws/
 └── src
     └── qt_demo
         ├── CMakeLists.txt
-        ├── CMakeLists.txt.user
         ├── include
         │   └── qt_demo
         │       └── mainwindow.h
