@@ -47,8 +47,9 @@ ros_qt_ws/
 # Working with Qt Creator and ROS2 package
 To work with Qt creator it is best to: 
 1. compile the package with `colcon build` from the terminal.
-2. launch the Qt Creator application from the terminal with sourced ROS2 environment.
-3. Ensure that there are no Qt Creator leftovers in the project, as they might make it impossible to load the package into Qt Creator (especially `.user` files).
+2. launch the Qt Creator application from within the terminal that has already sourced ROS2 environment.
+3. Ensure to delete any Qt Creator leftovers in the project, as they might make it impossible to load the package into Qt Creator (especially `*.user` files).
 4. Open project by selecting package's `CMakeLists.txt` file.
-5. Select `Import Existing Build...` option and select the `<workspace>/build/<package name>` directory.
+5. Select `Import Existing Build...` option in Qt Creator and select the `<workspace>/build/<package_name>` directory.
 6. It should now possible to compile and run ROS2 package from within the Qt Creator IDE.
+7. NOTE: Sometimes it might be necessary to restart the setup running `colcon build` from CLI again.
