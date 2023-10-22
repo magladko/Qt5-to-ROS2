@@ -1,1 +1,4 @@
 build*
+install*
+log*
+.vscode*
