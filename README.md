@@ -43,3 +43,4 @@ ros_qt_ws/
     - A generic ROS2 package can be found under [test_pkg_ws/src/my_package](./test_pkg_ws/src/my_package). It has been generated as a quick reference using command: `ros2 pkg create --build-type ament_cmake --node-name my_node my_package`.
 
 6. Create package.xml in `ros_qt_ws/src/<Qt project>/`
+
