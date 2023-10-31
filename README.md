@@ -31,7 +31,6 @@ ros_qt_ws/
         ├── include
         │   └── qt_demo
         │       └── mainwindow.h
-        ├── package.xml
         └── src
             ├── main.cpp
             ├── mainwindow.cpp
@@ -43,6 +42,21 @@ ros_qt_ws/
     - NOTE: it is important to pay attention to the difference between ament_target_dependencies() and target_link_libraries() as some libraries might need adjustments in calls ([reference](https://answers.ros.org/question/335364/ros2-rclcpp-linking-error-and-correct-way-to-handle-dependencies/))
 
 6. Create *package.xml* in `ros_qt_ws/src/<Qt project>/`
+
+```
+ros_qt_ws/
+└── src
+    └── qt_demo
+        ├── CMakeLists.txt
+        ├── include
+        │   └── qt_demo
+        │       └── mainwindow.h
+        ├── package.xml
+        └── src
+            ├── main.cpp
+            ├── mainwindow.cpp
+            └── mainwindow.ui
+```
 
 # Working with Qt Creator and ROS2 package
 To work with Qt creator it is best to: 
