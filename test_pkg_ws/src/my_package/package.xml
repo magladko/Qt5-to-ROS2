@@ -4,7 +4,7 @@
   <name>my_package</name>
   <version>0.0.0</version>
   <description>TODO: Package description</description>
-  <maintainer email="kornel.marek@gmail.com">magladko</maintainer>
+  <maintainer email="example@gmail.com">magladko</maintainer>
   <license>TODO: License declaration</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
